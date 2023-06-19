@@ -1,0 +1,266 @@
+{% load static %}
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d2ac1316ad.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="static/css/FoodPage.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container"><a class="navbar-brand" href="#">
+                <img src="{% static 'images/food-munch-img.jpg' %} " class="food-much-logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-link active" href="#WhyChooseUsSection" id="nav-items">My Choose Us?<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" id="nav-items" href="#exploreSection">Explore Menu</a>
+                    <a class="nav-link" id="nav-items" href="#healthySection">delivery & payment</a>
+                    <a class="nav-link" id="nav-items" href="#followSection">Follow US</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="banner-bg d-flex flex-column justify-content-center">
+        <div class="text-center">
+            <h1 class="banner-bg-h1">Get Delicious Food Anytime</h1>
+            <p class="banner-bg-paragraph">Eat Smart & Healthy</p>
+            <button class="button1-banner-bg ">View Menu</button>
+            <button class="button2-banner-bg  ">Order Now</button>
+        </div>
+    </div>
+    <div class="sectionWhyChooseUs pt-5 pb-5" id="WhyChooseUsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="h1-whychooseus">Why Choose Us?</h1>
+                    <p class="p-whychooseus"> We use both original recipes and classic versions of famous food items.</p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-6 col-xl-12">
+                    <div class="cards p-3 mb-3">
+                        <img src="{% static 'images/food-serve.jpg' %}" class="card-image" />
+                        <h1 class="card-h1">Food Service</h1>
+                        <p class="card-paragraph">Experience fine dining at the comfort of your home. All our orders are carefully packed and arranged to give you the nothing less than perfect.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-6 col-xl-12">
+                    <div class="cards p-3 mb-3">
+                        <img src="{% static 'images\fruits-img.jpg' %}" class="card-image" />
+                        <h1 class="card-h1">Fresh Food</h1>
+                        <p class="card-paragraph">The Fresh Food group provides fresh-cut fruits and vegetables
+                            directly picked from our partner farms and farm houses so that
+                            you always get them tree to plate.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-6 col-xl-12">
+                    <div class="cards p-3 mb-3">
+                        <img src="{% static 'images\offers-img.jpg'%}" class="card-image" />
+                        <h1 class="card-h1">Best Offers</h1>
+                        <p class="card-paragraph">Food Coupons & Offers upto
+                            <span class="offers">50% OFF</span>
+                            and Exclusive Promo Codes on All Online Food Orders.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="explore-menu-section pt-5 pb-5" id="exploreSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="explore-heading">Explore Menu</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                    <div class="shadow explore-card p-3 mb-3">
+                        <img src="{% static 'images\em-ginger-fried-img.jpg' %}" class="image w-100" />
+                        <h1 class="image-h1">Non-Veg Starters</h1>
+                        <a href="" class="link">view All
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#d0b200" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                    <div class="shadow explore-card p-3 mb-3">
+                        <img src="{% static 'images\em-soup-img.jpg' %} " class="image w-100" />
+                        <h1 class="image-h1">Soup & SPL_Soup</h1>
+                        <a href="" class="link">view All
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#d0b200" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                    <div class="shadow explore-card p-3 mb-3">
+                        <img src="{% static 'images\em-grilled-seafood-img.jpg' %} " class="image w-100" />
+                        <h1 class="image-h1">Fish & Sea food</h1>
+                        <a href="" class="link">view All
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#d0b200" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                    <div class="shadow explore-card p-3 mb-3">
+                        <img src="{% static 'images\em-hyderabadi-biryani-img.jpg' %} " class="image w-100" />
+                        <h1 class="image-h1">Main Course</h1>
+                        <a href="" class="link">view All
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#d0b200" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                    <div class="shadow explore-card p-3 mb-3">
+                        <img src="{% static 'images\em-mushroom-noodles-img.jpg' %} " class="image w-100" />
+                        <h1 class="image-h1">Noodles</h1>
+                        <a href="" class="link">view All
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#d0b200" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                    <div class="shadow explore-card p-3 mb-3">
+                        <img src="{% static 'images\em-gluten-img.jpg' %}" class="image w-100" />
+                        <h1 class="image-h1">Salads</h1>
+                        <a href="" class="link">view All
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#d0b200" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 col-xl-2">
+                    <div class="shadow explore-card p-3 mb-3">
+                        <img src="{% static 'images\em-coffee-bourbon-img.jpg' %} " class="image w-100" />
+                        <h1 class="image-h1">Desserts</h1>
+                        <a href="" class="link">view All
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="#d0b200" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="healthy-food-section pt-5 pb-5" id="healthySection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-5">
+                    <div class="text-center">
+                        <img src="{% static 'images\healthy-food-plate-img.jpg' %}" />
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-7">
+                    <div class="healthy-image-text">
+                        <h1 class="healthy-image-h1">Fresh, Healthy, Organic, Delicious Fruits</h1>
+                        <p class="healthy-image-paragraph">
+                            Say no to harmful chemicals and go fully organic with our range of
+                            fresh fruits and veggies. Pamper your body and your senses with
+                            the true and unadulterated gifts from mother nature. with the true
+                            and unadulterated gifts from mother nature.
+                        </p>
+                        <div>
+                            <button class="btn btn-warning">Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="delivery-and-payment-section pt-5 pb-5" id="deliverySection">
+           <div class="container d-flex">
+               <div class="row">
+                   <div class="col-12 col-md-5 order-1 order-md-2 order-lg-1 order-xl-2">
+                       <div class="text-center">
+                           <img src="{% static 'images\delivery-payment-section-img.jpg' %}" class="delivery-image" />
+                       </div>
+                   </div>
+                   <div class="col-12 col-md-7 order-2 order-md-1 order-lg-2 order-xl-1 ">
+                       <h1 class="delivery-image-h1">Delivery and payment</h1>
+                       <p class="delivery-image-pagragrph">Enjoy hassle-free payment with the plenitude of payment options
+                           available for you. Get live tracking and locate your food on a
+                           live map. It's quite a sight to see your food arrive to your door.
+                           Plus, you get a 5% discount on every order every time you pay
+                           online.</p>
+                       <button class="btn btn-warning">Order Now</button>
+
+                       <div class="mt-3 p-2 d-flex flex-row">
+                           <img src="{% static 'images\visa-card-img.jpg' %}" class="payment-card-img" />
+                           <img src="{% static 'images\master-card-img.jpg' %}" class="payment-card-img" />
+                           <img src="{% static 'images\paypal-card-img.jpg' %}" class="payment-card-img" />
+                           <img src="{% static 'images\american-express-img.jpg' %}" class="payment-card-img" />
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+    <div class="thanking-customers-section pt-5 pb-5" id="thankingSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-3 order-1 order-md-2 order-lg-3">
+                    <h1 class="thanking-h1 ">Thank you for being a valuable customer to us.</h1>
+                    <p class="thanking-paragraph">We have a surprise gift for you</p>
+                </div>
+                <div class="col-12 col-md-3 orde-2 order-md-1 order-lg-2">
+                    <img src="{% static 'images\thanking-customers-section-img.jpg' %}" class="thanking-image d-md-none" />
+                </div>
+                <div class="col-12 col-md-3 orde-2 order-md-1 order-lg-2">
+                    <img src="{% static 'images\thanking-customers-section-img.jpg' %}" class="thanking-image d-md-block d-none" />
+                </div>
+                <div class="col-12 col-md-3 order-3  order-lg-1">
+                    <button type="button" class="btn btn-warning thancking-button" data-toggle="modal" data-target="#exampleModal">
+                        Redeem Gift
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog mt-5">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title modal-h1" id="exampleModalLabel">Customer gift cards</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="{% static 'images\gift-voucher-img.png' %}" class="w-100" />
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="follow-us-section pt-5 pb-5" id="followSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="follow-us-h1 text-center">Follow Us</h1>
+                    <div class="d-flex flex-row justify-content-center">
+                        <div class="icons">
+                            <i class="fab fa-twitter icon"></i>
+                        </div>
+                        <div class="icons">
+                            <i class="fab fa-facebook icon"></i>
+                        </div>
+                        <div class="icons">
+                            <i class="fab fa-instagram icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
